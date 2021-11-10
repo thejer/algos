@@ -6,9 +6,10 @@ def palindrome(s):
         return 0
     else:
         for pivot in range(len(s)):
+            print(pivot)
             find_palindromes(s, pivot, pivot, palindromes)
             find_palindromes(s, pivot, pivot + 1, palindromes)
-    return len(palindromes)
+    return palindromes
 
 
 def find_palindromes(string, i, j, palindromes):
@@ -18,4 +19,4 @@ def find_palindromes(string, i, j, palindromes):
         j += 1
 
 
-print(palindrome("    "))
+print(palindrome("aabbaa"))

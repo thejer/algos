@@ -1,3 +1,6 @@
+from builtins import len, range, max
+
+
 def max_substring(s):
     n = len(s)
     maximum = ""

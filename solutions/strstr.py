@@ -1,5 +1,8 @@
 # class Solution:
-def str_str(haystack: str, needle: str):
+from builtins import range, len
+
+
+def str_str(haystack, needle):
     for i in range(len(haystack) - len(needle) + 1):
         if haystack[i:i + len(needle)] == needle:
             return i

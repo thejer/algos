@@ -24,7 +24,8 @@ def int_to_bin(i):
         else:
             bin = "0" + bin
         i //= 2
+        print("i", i)
     return bin
 
 
-binary_gap(561892)
+binary_gap(37)
